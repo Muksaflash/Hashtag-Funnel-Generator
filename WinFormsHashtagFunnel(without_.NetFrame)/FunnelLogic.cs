@@ -62,6 +62,7 @@ namespace WinFormsHashtagFunnel_without_.NetFrame_
             int fullFunnelCount = 0;
             int funnelCount = 0;
             bool isDictEmpty = false;
+            if (count == 0) isDictEmpty = true;
             while (!isDictEmpty)
             {
                 hashtagFunnelCount = hashtagFunnelNumber;
@@ -95,6 +96,13 @@ namespace WinFormsHashtagFunnel_without_.NetFrame_
                 }
                 funnelCount++;
             }
+
+            if(count == 0)
+            {
+                MessageBox.Show("В указанной папке отсутствовали записи!",
+               "Работа завершена!", MessageBoxButtons.OK);
+            }
+            else
             MessageBox.Show("Создано " + fullFunnelCount + " воронок по " + hashtagFunnelNumber
                 + " хэштегов и ещё " +
                 +funnelCount + " поменьше" + '\n' + '\n' +
