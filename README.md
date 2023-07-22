@@ -1,4 +1,4 @@
-# WinFormsHashtagFunnel
+# Hashtag Funnel Generator
 
 A Windows Forms application that generates hashtag funnels for SMM managers based on a txt file containing hashtag frequencies. The program utilizes LINQ technology and provides a graphical user interface (GUI) for easy interaction.
 
